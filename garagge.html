@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    car model:<input id="model">
+   carnum:<input id="num">
+
+    <button onclick="addcarnum()">Add</button>
+    <script>
+        let carnum=[]
+
+        function addcarnum(){
+            cars.push({"model":model.value,"carnum":carnum.value})
+            console.log(carnum);
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+
+</head>
+<h1>cars</h1>
+<body>
+    carnomber:<input id="cname">
+    carmodel:<input id="carmodel">
+    colur<input id="carcolur">
+
+    <button onclick="addcar()">Add</button>
+    <button onclick="clearInputs()">clear</button>
+    <button onclick="removeLastCar()">Remove Last Car</button>
+    <button onclick="removeCarbynom()">Remove Car by nom</button>
+    <script>
+        let cars = []
+
+        function addcar() {
+            cars.push({ "carname": cname.value,
+             "carmodel": carmodel.value,
+             "carcolur":carcolur.value });
+            console.log(cars);
+        }
+        
+        function clearInputs() {
+            
+            document.getElementById({ "carname": cname.value='', "carmodel": carmodel.value='',"carcolur":carcolur.value=''})
+        }
+        function removeLastCar() {
+            if (cars.length > 0) {
+                cars.pop();
+                console.log('Last car removed. Current cars:', cars);
+            } else {
+                console.log('No cars to remove.');
+            }
+        }
+        //-----remov car by nmber----------
+       
+        //     function removeCarbynom() {
+        //     let carNumber = parseInt(document.getElementById('cname').value);
+        //     let carIndex = carNumber - 1;
+        //     if (carIndex >= 0 && carIndex < cars.length) {
+        //         cars.splice(carIndex, 1);
+        //         console.log('Car removed. Current cars:', cars);
+        //     } else {
+        //         console.log('Invalid car number.');
+        //     }
+        // }
+        //    
+        //     let indexToRemove = garage.findIndex(car => car[0].ID === idToRemove);
+
+
+        
+        //     if (indexToRemove !== -1) { // -1 means not found
+        //         garage.splice(indexToRemove, 1);
+        //         updateGarage();
+        //         msg.innerHTML = `<h3>ID #${idToRemove} has been removed from the garage.`
+        //     } else {
+        //         msg.innerHTML = `<h3>Car with specified ID not found`
+        //     }
+        // }
+
+
+
+
+
+        // function removeCarbynom() {
+        //     if (cars.length > 0) {
+        //         cars.pop();
+        //         console.log('Last car removed. Current cars:', cars);
+        //     } else {
+        //         console.log('No cars to remove.');
+        //     }
+        // }
+
+    </script>
+</body>
+
+</html> 
+</body>
+</html>
